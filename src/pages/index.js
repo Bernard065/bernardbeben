@@ -37,7 +37,7 @@ export default function Home() {
                   <span className='mr-2'>Resume</span>
                   <FileDownloadIcon className='h-5 w-5' />
                 </Link>
-                <Link href='bernardbebeni@gmail.com' target={'-blank'} className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500'>Contact Me</Link>
+                <Link href='mailto:bernardbebeni@gmail.com' target={'-blank'} className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500'>Contact Me</Link>
             </div>
             </div>
           </div>
