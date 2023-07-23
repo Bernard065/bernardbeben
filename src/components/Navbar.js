@@ -6,6 +6,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Logo from "./Logo";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+
+
+const iconMotionVariants = {
+    initial: { y: 0 },
+    hover: { y: -2 },
+};
+
 
 
 
@@ -31,38 +39,39 @@ const Navbar = () => {
             <CustomLink href='/articles' title='Articles' className='ml-4' />
             
         </nav>
-        
+
         <nav className="space-x-4">
-            <Link 
-                href='/' 
-                target="{_blank"
-                className="inline-block p-2 rounded-full hover:bg-orange-500 transition-colors ease-in-out duration-300"
+            <Link href='https://twitter.com/bernard_bebeni' target="_blank">
+                <motion.div
+                    className="inline-block p-2 transition-colors ease-in-out duration-300"
+                    variants={iconMotionVariants}
+                    whileHover="hover"
             >
                     <TwitterIcon className="w-6 h-6 text-white" />
+                </motion.div>
             </Link>
-            <Link 
-                href='/' 
-                target="{_blank}"
-                className="inline-block p-2 rounded-full hover:bg-orange-500 transition-colors ease-in-out duration-300"
-            >   
-                    <LinkedInIcon className="w-6 h-6 text-white" />
+            <Link href='https://www.linkedin.com/in/benard-bebeni/' target="_blank">
+                <motion.div
+                    className="inline-block p-2 transition-colors ease-in-out duration-300"
+                    variants={iconMotionVariants}
+                    whileHover="hover"
+            >
+                        <LinkedInIcon className="w-6 h-6 text-white" />
+                </motion.div>
             </Link>
-            <Link 
-                href='/' 
-                target="{_blank}"
-                className="inline-block p-2 rounded-full hover:bg-orange-500 transition-colors ease-in-out duration-300"
+            <Link href='https://github.com/Bernard065' target="_blank">
+                <motion.div
+                    className="inline-block p-2  transition-colors ease-in-out duration-300"
+                    variants={iconMotionVariants}
+                    whileHover="hover"
             >
                     <GitHubIcon className="w-6 h-6 text-white" />
+                </motion.div>
             </Link>
-            {/* <Link
-                href="/"
-                target="_blank"
-                className="inline-block p-2 rounded-full hover:bg-orange-500 transition-colors ease-in-out duration-300"
-                >
-                <MediumSVG className="w-6 h-6 text-white" />
-            </Link> */}
-            
-        </nav>
+      </nav>
+
+        
+        
         <div className="absolute left-[50%] top-2 translate-x-[-50%]">
             <Logo />
         </div>
