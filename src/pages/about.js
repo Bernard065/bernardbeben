@@ -6,6 +6,9 @@ import Image from 'next/image';
 import aboutProfile from '../../public/images/profile/A black program 0.png';
 import { motion } from 'framer-motion';
 import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+
 
 
 const About = () => {
@@ -44,6 +47,8 @@ const About = () => {
             </div>
           </section>
           <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
