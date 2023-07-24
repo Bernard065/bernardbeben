@@ -78,10 +78,8 @@ PROJECTS PAGE:
 
 - Imagination Trumps Knowledge!
 
-Crypto Screener Application
-A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency.
+CryptApplicationo Screener 
+.
 
 React Portfolio Website
 A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 

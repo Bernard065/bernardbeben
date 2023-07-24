@@ -14,7 +14,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       <LiIcon />
       <h3 className="capitalize font-bold text-2xl">
         {position}&nbsp;
-        <a href={companyLink} target="-blank" className="text-primary capitalize">
+        <a href={companyLink} target="_blank" className="text-primary capitalize">
           @{company}
         </a>
       </h3>
