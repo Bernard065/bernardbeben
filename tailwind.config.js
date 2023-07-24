@@ -20,6 +20,9 @@ module.exports = {
         primary: "#863E96",
         primaryDark: "#58E609",
       },
+      backgroundImage: {
+        circularDark: 'repeating-radial-gradient(rgba(255, 255, 255, 0.4) 2px, #1b1b1b 5px, #1b1b1b 100px);'
+      }
     },
   },
   plugins: [],
