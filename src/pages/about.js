@@ -22,23 +22,29 @@ const About = () => {
         <Layout className='pt-16'>
           <AnimatedText text='Passion Fuels Innovation!' />
 
-          <section className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-8'>
+          <section className='grid grid-cols-2 lg:grid-cols-1 gap-12 items-center mt-8'>
             <motion.div 
               className='text-center md:text-left'
               initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <h2 className='text-3xl font-bold mb-4'>About Me</h2>
-              <p className='text-lg'>
+              <h2 className='text-3xl font-bold mb-4 text-center'>About Me</h2>
+              <p className='text-lg text-left mb-3'>
                 Hi, I'm Bernard, a full-stack developer. As a skilled software developer, I
                 bring a diverse set of technical skills and creative problem-solving abilities
-                to create efficient, scalable, and user-friendly solutions. With expertise in
+                to create efficient, scalable, and user-friendly solutions.
+              </p>
+              <p className='text-lg text-left mb-3'>
+                With expertise in
                 TypeScript, JavaScript, and frameworks like ReactJs, Node.js, Next.js, Ruby, Python
                 and Three.js, I have a strong foundation in web development and a proven track
                 record of delivering high-quality software products. I thrive on collaboration
                 and excel at working closely with clients to understand their needs and goals.
-                By leveraging my technical knowledge and adaptability, I ensure that the
+                
+              </p>
+              <p className='text-lg text-left'>
+              By leveraging my technical knowledge and adaptability, I ensure that the
                 solutions I develop address real-world problems and exceed client expectations.
               </p>
             </motion.div>

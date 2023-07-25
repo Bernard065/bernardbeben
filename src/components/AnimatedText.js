@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const AnimatedText = ({ text, className = '' }) => {
   return (
-    <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'>
+    <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0'>
       <h1 className={`${className} inline-block w-full text-white font-bold capitalize text-8xl`}>
         {text.split(' ').map((word, index) => (
           <motion.span

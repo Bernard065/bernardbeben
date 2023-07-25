@@ -17,27 +17,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex items-center w-full min-h-full text-white'>
-        <Layout className='pt-0'>
-          <div className='w-full flex items-center justify-between'>
-            <div className='w-1/2'>
-              <Image src={profilePic} alt='profile' className='w-full h-auto' />
+        <Layout className='pt-0 md:pt-16 sm:pt-8'>
+          <div className='w-full flex items-center justify-between lg:flex-col'>
+            <div className='w-1/2 md:w-full'>
+              <Image src={profilePic} alt='profile' className='w-full h-auto lg:hidden md:inline-block md:w-full' />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center'>
-              <AnimatedText text='Transforming Imagination into Reality with Code and Design.' className='!text-6xl !text-left' />
+            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+              <AnimatedText text='Transforming Imagination into Reality with Code.' className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <motion.p
                 initial={{ x: -200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.5 }}
-                className='text-white text-lg mt-4 text-left'
+                className='text-white mt-4 text-left font-medium my-4 text-base md:text-sm sm:text-xs'
               >
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let's bring digital vision to life through code!
               </motion.p>
-              <div className='flex items-center self-start mt-5'>
-                <Link href='/bernardResume.pdf' target={'-blank'} className='bg-gray-500 hover:bg-gray-700 text-white text-lg px-4 py-2 rounded-md mr-4'>
+              <div className='flex items-center self-start mt-2 lg:self-center'>
+                <Link href='/bernardResume.pdf' target={'-blank'} className='bg-gray-500 hover:bg-gray-700 text-white text-lg px-4 py-2 rounded-md mr-4 md:p-2 md:px-4 md:text-base'>
                   <span className='mr-2'>Resume</span>
                   <FileDownloadIcon className='h-5 w-5' />
                 </Link>
-                <Link href='mailto:bernardbebeni@gmail.com' target={'-blank'} className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500'>Contact Me</Link>
+                <Link href='mailto:bernardbebeni@gmail.com' target={'-blank'} className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500 md:text-base'>Contact Me</Link>
             </div>
             </div>
           </div>
