@@ -27,7 +27,7 @@ export default function Home() {
               <motion.p
                 initial={{ x: -200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
+                transition={{ duration: 1, delay: 1 }}
                 className='text-white mt-4 text-left font-medium my-4 text-base md:text-sm sm:text-xs'
               >
                 As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let's bring digital vision to life through code!
