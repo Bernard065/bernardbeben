@@ -23,14 +23,14 @@ export default function Home() {
               <Image src={profilePic} alt='profile' className='w-full h-auto lg:hidden md:inline-block md:w-full' />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-              <AnimatedText text='Transforming Imagination into Reality with Code.' className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
+              <AnimatedText text='Transforming Imagination into Reality with Code and Words.' className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <motion.p
                 initial={{ x: -200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1 }}
                 className='text-white mt-4 text-left font-medium my-4 text-base md:text-sm sm:text-xs'
               >
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
+                As a skilled full-stack developer and technical writer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
               </motion.p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href='/bernardResume.pdf' target={'-blank'} className='bg-gray-500 hover:bg-gray-700 text-white text-lg px-4 py-2 rounded-md mr-4 md:p-2 md:px-4 md:text-base'>
