@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Layout from '@/components/Layout'
-import profilePic from '../../public/images/profile/developer-pic-1.png'
-import AnimatedText from '@/components/AnimatedText'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+import Head from 'next/head';
+import Image from 'next/image';
+import Layout from '@/components/Layout';
+import profilePic from '../../public/images/profile/developer-pic-1.png';
+import AnimatedText from '@/components/AnimatedText';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 export default function Home() {
@@ -16,10 +16,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex items-center w-full min-h-full text-white'>
-        <Layout className='pt-0 md:pt-16 sm:pt-8'>
-          <div className='w-full flex items-center justify-between lg:flex-col'>
-            <div className='w-1/2 md:w-full'>
+      <main className="flex items-center w-full min-h-full text-white">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
+          <div className="w-full flex items-center justify-between lg:flex-col">
+            <div className="w-1/2 md:w-full">
               <Image src={profilePic} alt='profile' className='w-full h-auto lg:hidden md:inline-block md:w-full' />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
@@ -30,7 +30,7 @@ export default function Home() {
                 transition={{ duration: 1, delay: 1 }}
                 className='text-white mt-4 text-left font-medium my-4 text-base md:text-sm sm:text-xs'
               >
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let's bring digital vision to life through code!
+                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
               </motion.p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href='/bernardResume.pdf' target={'-blank'} className='bg-gray-500 hover:bg-gray-700 text-white text-lg px-4 py-2 rounded-md mr-4 md:p-2 md:px-4 md:text-base'>
@@ -38,11 +38,11 @@ export default function Home() {
                   <FileDownloadIcon className='h-5 w-5' />
                 </Link>
                 <Link href='mailto:bernardbebeni@gmail.com' target={'-blank'} className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500 md:text-base'>Contact Me</Link>
-            </div>
+              </div>
             </div>
           </div>
         </Layout>
       </main>
     </>
-  )
+  );
 }
