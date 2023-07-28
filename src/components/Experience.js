@@ -63,29 +63,15 @@ const Experience = () => {
             work="Integrated third-party APIs and services to enhance functionality and streamline processes, reducing development time and improving overall application capabilities. Implemented robust security measures and conducted thorough testing to ensure the integrity and reliability of web applications, protecting user data and preventing security breaches."
           />
           <Details
-            position="Full-stack Developer"
-            company="Freelancer"
-            companyLink="https://www.upwork.com/"
-            time="2023-present"
-            address="Remote"
-            work="Integrated third-party APIs and services to enhance functionality and streamline processes, reducing development time and improving overall application capabilities. Implemented robust security measures and conducted thorough testing to ensure the integrity and reliability of web applications, protecting user data and preventing security breaches."
+            position="Assistant System Administrator"
+            company="KEMI"
+            companyLink="https://www.kemi.ac.ke/"
+            time="2021-2023"
+            address="Nairobi"
+            work="Implemented a Centralized Monitoring System: I set up a centralized monitoring system that continuously monitored the organization's servers, network devices, and critical applications. This proactive approach allowed us to identify and resolve potential issues before they impacted operations, leading to a significant reduction in system downtime."
           />
-          <Details
-            position="Full-stack Developer"
-            company="Freelancer"
-            companyLink="https://www.upwork.com/"
-            time="2023-present"
-            address="Remote"
-            work="Integrated third-party APIs and services to enhance functionality and streamline processes, reducing development time and improving overall application capabilities. Implemented robust security measures and conducted thorough testing to ensure the integrity and reliability of web applications, protecting user data and preventing security breaches."
-          />
-          <Details
-            position="Full-stack Developer"
-            company="Freelancer"
-            companyLink="https://www.upwork.com/"
-            time="2023-present"
-            address="Remote"
-            work="Integrated third-party APIs and services to enhance functionality and streamline processes, reducing development time and improving overall application capabilities. Implemented robust security measures and conducted thorough testing to ensure the integrity and reliability of web applications, protecting user data and preventing security breaches."
-          />
+       
+          
         </motion.ul>
       </div>
     </div>

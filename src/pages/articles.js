@@ -4,7 +4,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import article1 from '../../public/images/articles/pagination component in reactjs.jpg'
+import redux from '../../public/images/articles/redux.png'
+import jwt from '../../public/images/articles/jwt.png'
+import git from '../../public/images/articles/git.png'
 import { motion, useMotionValue } from 'framer-motion'
 
 const FramerImage = motion(Image);
@@ -108,40 +110,40 @@ const articles = () => {
                 />
                 <div className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gapy-y-16'>
                     <FeatureArticles 
-                        title='Build A Custom Pagination Component In Reactjs From Scratch'
-                        summary='Learn how to build a custom pagination component in ReactJS from scratch. 
-                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project.'
-                        time='9 min read'
-                        link='https://medium.com/@bernardbebeni'
-                        img={article1}
+                        title='Simplifying State Management with Redux Toolkit'
+                        summary='Learn how to simplify state management in your React applications using Redux Toolkit. 
+                        Follow this step-by-step guide to discover how to reduce boilerplate code, handle asynchronous actions effortlessly, and organize your state logic efficiently.'
+                        time='10 min read'
+                        link='https://towardsdev.com/simplifying-state-management-with-redux-toolkit-beeca9cf07c1'
+                        img={redux}
                     />
                     <FeatureArticles 
-                        title='Build A Custom Pagination Component In Reactjs From Scratch'
-                        summary='Learn how to build a custom pagination component in ReactJS from scratch. 
-                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project.'
-                        time='9 min read'
-                        link='https://medium.com/@bernardbebeni'
-                        img={article1}
+                        title='Implementing JWT Authentication in Rails'
+                        summary="Learn how to implement JWT (JSON Web Token) authentication in your Rails applications. 
+                        Follow this step-by-step guide to bolster your application's authentication mechanism and ensure a smooth and reliable user experiencet."
+                        time='5 min read'
+                        link='https://towardsdev.com/implementing-jwt-authentication-in-rails-10e1907e5ab6'
+                        img={jwt}
                     />
                 </div>
                 <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
                 <Article 
-                    title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                    date='July 25, 2023'
-                    link='https://medium.com/@bernardbebeni'
-                    img={article1}
+                    title='Simplifying State Management with Redux Toolkit'
+                    date='July 13, 2023'
+                    link='https://towardsdev.com/simplifying-state-management-with-redux-toolkit-beeca9cf07c1'
+                    img={redux}
                 />
                 <Article 
-                    title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                    date='July 25, 2023'
-                    link='https://medium.com/@bernardbebeni'
-                    img={article1}
+                    title='Complete Guide to Git Version Control: Mastering Collaboration'
+                    date='July 6, 2023'
+                    link='https://towardsdev.com/complete-guide-to-git-version-control-mastering-collaboration-e7f3a76e7a5'
+                    img={git}
                 />
                 <Article 
-                    title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                    date='July 25, 2023'
-                    link='https://medium.com/@bernardbebeni'
-                    img={article1}
+                    title='Implementing JWT Authentication in Rails'
+                    date='May 20, 2023'
+                    link='https://towardsdev.com/implementing-jwt-authentication-in-rails-10e1907e5ab6'
+                    img={redux}
                 />
             </Layout>
         </main>

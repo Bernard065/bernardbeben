@@ -58,10 +58,10 @@ const Education = () => {
             info=" An immersive program based on the Flatiron School curriculum. I developed proficiency in JavaScript, Python, React, Django, and Ruby on Rails. The bootcamp emphasized hands-on learning through real-world projects and collaborative teamwork. As a result, I enhanced my problem-solving and communication skills. I am now ready to make impactful contributions in the field of software engineering."
             />
             <Details
-            type="Software Engineering BootCamp"
-            time="2022"
-            place="Moringa School"
-            info=" An immersive program based on the Flatiron School curriculum. I developed proficiency in JavaScript, Python, React, Django, and Ruby on Rails. The bootcamp emphasized hands-on learning through real-world projects and collaborative teamwork. As a result, I enhanced my problem-solving and communication skills. I am now ready to make impactful contributions in the field of software engineering."
+            type="Bsc. Computer Science"
+            time="2018"
+            place="Chuka University"
+            info=" I completed a comprehensive program focusing on computer systems, software development, and problem-solving. Engaging in hands-on projects, hackathons, and coding competitions, I honed my skills in programming, algorithm design, and time management. Workshops and seminars allowed me to stay updated with the latest technologies, sparking a passion for software engineering and a drive to contribute to innovative projects and collaborative teams."
             />
             
            

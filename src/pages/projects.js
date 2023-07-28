@@ -5,7 +5,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import beachresort from '../../public/images/projects/beachresort.png';
+import evolgym from '../../public/images/projects/evolgym.png'
+import paypal from '../../public/images/projects/paypal.png'
+import gericht from '../../public/images/projects/gericht.png'
+import piza from '../../public/images/projects/piza.jpg'
 import { motion } from 'framer-motion'
 
 
@@ -70,38 +74,49 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <ProjectDetails
-                            title='CryptApplication Screener '
-                            type='Financial Project'
-                            summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency'
-                            img={project1}
-                            link='https://project3-link.com'
-                            github='https://github.com/project3-repo'
+                            title='BeachResort Reservation Application '
+                            type='Reservation Project'
+                            summary='BeachResort is an innovative application that connects travelers with unique accommodation options. Built using React.js and Rails, with Styled Material UI and React Router, the platform allows users to sign up and easily browse available rooms, search for specific options, and book reservations with confirmation. Users can manage their reservations, while administrators can create and manage listings. With its user-friendly interface and comprehensive features, "BeachResort" offers a seamless and personalized experience for travelers and hosts alike.'
+                            img={beachresort}
+                            link='https://reservation-app-mu.vercel.app/'
+                            github='https://github.com/Bernard065/reservation-App'
+                        />
+                        <ProjectDetails
+                            title='Piza Tracker '
+                            type='Rails API'
+                            summary='The Piza Tracker is a Rails API that enables users to track restaurants and their associated pizzas. The API offers various endpoints, including fetching a list of all restaurants and pizzas, accessing details of a specific restaurant along with its pizzas, and creating RestaurantPizza records to associate existing pizzas with restaurants. Users can use the endpoints to manage restaurant-pizza relationships seamlessly. The API employs the Restaurant, Pizza, and RestaurantPizza models to efficiently organize and retrieve relevant data, providing a comprehensive pizza tracking solution.'
+                            img={piza}
+                            link='https://github.com/Bernard065/pizaa-tracker-API'
+                            github='https://github.com/Bernard065/pizaa-tracker-API'
                         />
                     </div>
                     <div className='col-span-12'>
                         <ProjectDetails
-                            title='CryptApplication Screener '
-                            type='Financial Project'
-                            summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency'
-                            img={project1}
-                            link='https://project3-link.com'
-                            github='https://github.com/project3-repo'
+                            title='EvolutionaryGym Application'
+                            type='Fitness Project'
+                            summary='"EvolutionaryGym" is a cutting-edge React frontend application built with TypeScript, Vite, Tailwind CSS, Hero Icons, Framer Motion, and Form Submit functionality. It aims to deliver a smooth and visually appealing user experience while incorporating React Anchor Link Smooth Scroll for seamless navigation.'
+                            img={evolgym}
+                            link='https://evolutionary-fitness-centre.vercel.app/'
+                            github='https://github.com/Bernard065/Evolutionary-Fitness-Centre'
                         />
                     </div>
                     <div className='col-span-12'>
                         <ProjectDetails
-                            title='CryptApplication Screener '
-                            type='Financial Project'
-                            summary='A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency'
-                            img={project1}
-                            link='https://project3-link.com'
-                            github='https://github.com/project3-repo'
+                            title='PayPal Clone '
+                            type='E-Commerce Project'
+                            summary="The PayPal Homepage Clone is a React application replicating the PayPal homepage's appearance and functionality. It utilizes popular packages like Material-UI, Emotion, and React Router for styling, icons, and smooth navigation. With Tailwind CSS, it ensures streamlines styling. This efficient combination delivers a visually appealing and fully functional frontend clone of the original PayPal homepage"
+                            img={paypal}
+                            link='https://paypal-clone-tau.vercel.app/'
+                            github='https://github.com/Bernard065/paypal-clone'
+                        />
+
+<ProjectDetails
+                            title='Gericht Restaurant'
+                            type='Restaurant Project'
+                            summary="The Gericht Restaurant is a web application created from a Figma design for a hotel landing page. Developed using React, the project includes React Icons for stylish iconography. The application translates the Figma design into a visually captivating and fully functional hotel landing page."
+                            img={gericht}
+                            link='https://the-gourmet-garden-restaurant-application.vercel.app/'
+                            github='https://github.com/Bernard065/The-Gericht-Garden-restaurant-application'
                         />
                     </div>
                 </div>
