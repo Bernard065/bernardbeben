@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
-import profilePic from '../../public/images/profile/developer-pic-1.png';
+import profilePic from '../../public/images/profile/bernard_cropped.png';
 import AnimatedText from '@/components/AnimatedText';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
