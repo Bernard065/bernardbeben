@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '@/components/Layout';
-import profilePic from '../../public/images/profile/bernard_cropped.png';
+import profilePic from '../../public/images/profile/boimelo3.png';
 import AnimatedText from '@/components/AnimatedText';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className="flex items-center w-full min-h-full text-white">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="w-full flex items-center justify-between lg:flex-col">
+          <div className="w-full flex items-center justify-between lg:flex-col gap-10">
             <div className="w-1/2 md:w-full">
               <Image src={profilePic} alt='profile' className='w-full h-auto lg:hidden md:inline-block md:w-full' />
             </div>
