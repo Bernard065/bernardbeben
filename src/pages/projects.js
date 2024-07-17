@@ -3,9 +3,10 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import beachresort from '../../public/images/projects/beachresort.png';
+import clinic from '../../public/images/projects/clinic.png';
 import evolgym from '../../public/images/projects/evolgym.png'
 import paypal from '../../public/images/projects/paypal.png'
 import gericht from '../../public/images/projects/gericht.png'
@@ -14,9 +15,19 @@ import { motion } from 'framer-motion'
 
 
 
+
 const FramerImage = motion(Image);
 
 const ProjectDetails = ({ type, title, summary, img, link, github }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const handleToggle = () => {
+
+        setIsExpanded(!isExpanded);
+    }
+
+    const shortSummary = summary.length > 100 ? summary.slice(0, 100) + '...' : summary;
+
     return (
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-white shadow-2xl text-white p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
@@ -42,7 +53,17 @@ const ProjectDetails = ({ type, title, summary, img, link, github }) => {
                 >
                     <h2 className='my-2 w-full text-left text-4xl font-bold sm:text-sm'>{title}</h2>
                 </Link>
-                <p className='my-2 font-medium text-white sm:text-sm'>{summary}</p>
+                <p className='my-2 font-medium text-white sm:text-sm'>
+                    {isExpanded ? summary : shortSummary}
+                    {summary.length > 100 && (
+                        <button 
+                            onClick={handleToggle}
+                            className='text-blue-500 ml-2'
+                        >
+                            {isExpanded ? 'Show less' : 'More'}
+                        </button>
+                    )}
+                </p>
                 <div className='mt-2 flex items-center '>
                     <Link href={github} target='_blank'>
                         <GitHubIcon />
@@ -74,13 +95,16 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <ProjectDetails
-                            title='BeachResort Reservation Application '
-                            type='Reservation Project'
-                            summary='BeachResort is an innovative application that connects travelers with unique accommodation options. Built using React.js and Rails, with Styled Material UI and React Router, the platform allows users to sign up and easily browse available rooms, search for specific options, and book reservations with confirmation. Users can manage their reservations, while administrators can create and manage listings. With its user-friendly interface and comprehensive features, "BeachResort" offers a seamless and personalized experience for travelers and hosts alike.'
-                            img={beachresort}
-                            link='https://reservation-app-mu.vercel.app/'
-                            github='https://github.com/Bernard065/reservation-App'
+                            title='ClinicSync'
+                            type='Healthcare Project'
+                            summary='ClinicSync is a comprehensive healthcare management system that streamlines the appointment process for patients and administrators. Patients can easily schedule appointments, which administrators can then confirm, triggering an SMS notification to inform the patient. Administrators also have the ability to cancel appointments, ensuring flexibility and clear communication. Built with Next.js, React.js, Appwrite, and Twilio, ClinicSync leverages these technologies to provide a robust and efficient platform for managing healthcare appointments, enhancing the overall experience for both patients and healthcare providers.'
+                            img={clinic}
+                            link='https://clinic-sync.vercel.app/'
+                            github='https://github.com/Bernard065/clinic-sync'
                         />
+                    </div>
+                    
+                    <div className='col-span-12'>
                         <ProjectDetails
                             title='Piza Tracker '
                             type='Rails API'
@@ -109,8 +133,19 @@ const projects = () => {
                             link='https://paypal-clone-tau.vercel.app/'
                             github='https://github.com/Bernard065/paypal-clone'
                         />
-
-<ProjectDetails
+                    </div>
+                    <div className='col-span-12'>
+                        <ProjectDetails
+                            title='PayPal Clone '
+                            type='E-Commerce Project'
+                            summary="The PayPal Homepage Clone is a React application replicating the PayPal homepage's appearance and functionality. It utilizes popular packages like Material-UI, Emotion, and React Router for styling, icons, and smooth navigation. With Tailwind CSS, it ensures streamlines styling. This efficient combination delivers a visually appealing and fully functional frontend clone of the original PayPal homepage"
+                            img={paypal}
+                            link='https://paypal-clone-tau.vercel.app/'
+                            github='https://github.com/Bernard065/paypal-clone'
+                        />
+                    </div>
+                    <div className='col-span-12'>
+                        <ProjectDetails
                             title='Gericht Restaurant'
                             type='Restaurant Project'
                             summary="The Gericht Restaurant is a web application created from a Figma design for a hotel landing page. Developed using React, the project includes React Icons for stylish iconography. The application translates the Figma design into a visually captivating and fully functional hotel landing page."
@@ -118,7 +153,8 @@ const projects = () => {
                             link='https://the-gourmet-garden-restaurant-application.vercel.app/'
                             github='https://github.com/Bernard065/The-Gericht-Garden-restaurant-application'
                         />
-                    </div>
+                    </div>      
+
                 </div>
             </Layout>
         </main>

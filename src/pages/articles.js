@@ -7,6 +7,8 @@ import React, { useRef } from 'react'
 import redux from '../../public/images/articles/redux.png'
 import jwt from '../../public/images/articles/jwt.png'
 import git from '../../public/images/articles/git.png'
+import asynchronous from '../../public/images/articles/AsynchronousJavaScript.png'
+import object from '../../public/images/articles/Object-Oriented.png'
 import { motion, useMotionValue } from 'framer-motion'
 
 const FramerImage = motion(Image);
@@ -144,6 +146,18 @@ const articles = () => {
                     date='May 20, 2023'
                     link='https://towardsdev.com/implementing-jwt-authentication-in-rails-10e1907e5ab6'
                     img={redux}
+                />
+                <Article 
+                    title='Mastering Asynchronous Programming in JavaScript: A Comprehensive Guide'
+                    date='Jun 24 20, 2024'
+                    link='https://medium.com/@bernardbebeni/mastering-asynchronous-programming-in-javascript-a-comprehensive-guide-0384c105d518'
+                    img={asynchronous}
+                />
+                <Article 
+                    title='Mastering Object-Oriented Programming (OOP) in JavaScript'
+                    date='Jun 20, 2024'
+                    link='https://bernardbebeni.hashnode.dev/mastering-object-oriented-programming-oop-in-javascript'
+                    img={object}
                 />
             </Layout>
         </main>

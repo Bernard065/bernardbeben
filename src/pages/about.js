@@ -3,7 +3,7 @@ import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import aboutProfile from '../../public/images/profile/about_me.jpg';
+import aboutProfile from '../../public/images/profile/bernard_profle1.png';
 import { motion } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
