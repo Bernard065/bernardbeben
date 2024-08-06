@@ -107,9 +107,9 @@ const projects = () => {
 
             <div className="col-span-12">
               <ProjectDetails
-                title="Piza Tracker "
+                title="Pizza Tracker "
                 type="Rails API"
-                summary="The Piza Tracker is a Rails API that enables users to track restaurants and their associated pizzas. The API offers various endpoints, including fetching a list of all restaurants and pizzas, accessing details of a specific restaurant along with its pizzas, and creating RestaurantPizza records to associate existing pizzas with restaurants. Users can use the endpoints to manage restaurant-pizza relationships seamlessly. The API employs the Restaurant, Pizza, and RestaurantPizza models to efficiently organize and retrieve relevant data, providing a comprehensive pizza tracking solution."
+                summary="The Pizza Tracker is a Rails API that enables users to track restaurants and their associated pizzas. The API offers various endpoints, including fetching a list of all restaurants and pizzas, accessing details of a specific restaurant along with its pizzas, and creating RestaurantPizza records to associate existing pizzas with restaurants. Users can use the endpoints to manage restaurant-pizza relationships seamlessly. The API employs the Restaurant, Pizza, and RestaurantPizza models to efficiently organize and retrieve relevant data, providing a comprehensive pizza tracking solution."
                 img={piza}
                 link="https://github.com/Bernard065/pizaa-tracker-API"
                 github="https://github.com/Bernard065/pizaa-tracker-API"
