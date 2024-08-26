@@ -6,6 +6,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import clinic from "../../public/images/projects/clinic.png";
+import devflow from "../../public/images/projects/devflow.png";
 import evolgym from "../../public/images/projects/evolgym.png";
 import threads from "../../public/images/projects/threads.png";
 import paypal from "../../public/images/projects/paypal.png";
@@ -96,12 +97,34 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <ProjectDetails
+                title="DevOverflow Application"
+                type="Community Project"
+                summary="Dev Overflow is a popular online platform where developers and programmers can ask and answer questions related to coding, software development, and various technical topics. It operates as a community-driven Q&A site where users can post questions, provide answers, and vote on the quality of contributions. This application was built using Next.js, Reactjs, Tailwind CSS, and MongoDB, and clerk user authentication, real-time updates using webhooks, and a responsive design."
+                img={devflow}
+                link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
+                github="https://github.com/Bernard065/dev-overflow"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <ProjectDetails
                 title="ClinicSync"
                 type="Healthcare Project"
                 summary="ClinicSync is a comprehensive healthcare management system that streamlines the appointment process for patients and administrators. Patients can easily schedule appointments, which administrators can then confirm, triggering an SMS notification to inform the patient. Administrators also have the ability to cancel appointments, ensuring flexibility and clear communication. Built with Next.js, React.js, Appwrite, and Twilio, ClinicSync leverages these technologies to provide a robust and efficient platform for managing healthcare appointments, enhancing the overall experience for both patients and healthcare providers."
                 img={clinic}
                 link="https://clinic-sync.vercel.app/"
                 github="https://github.com/Bernard065/clinic-sync"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <ProjectDetails
+                title="Threads Application"
+                type="Social Media Project"
+                summary="Threads Application, built with Next.js 14 and Reactjs, utilizes server-side rendering for optimal performance and MongoDB for complex data handling. TailwindCSS ensures responsive, beautiful layouts, while Clerk manages authentication. UploadThing supports file uploads, and Shadcn components enhance UI. The app features real-time event handling via webhooks, and employs Zod for data validation. React Hook Form simplifies form management, and modern Next.js layout route groups are utilized. Users can create and interact with threads, and admins can invite members to communities with notifications. The application is designed with a solid architecture and reusable components for scalability and maintainability."
+                img={threads}
+                link="https://threads-application-nine.vercel.app/"
+                github="https://github.com/Bernard065/threads-application"
               />
             </div>
 
@@ -115,16 +138,7 @@ const projects = () => {
                 github="https://github.com/Bernard065/pizaa-tracker-API"
               />
             </div>
-            <div className="col-span-12">
-              <ProjectDetails
-                title="Threads Application"
-                type="Social Media Project"
-                summary="Threads Application, built with Next.js 14, utilizes server-side rendering for optimal performance and MongoDB for complex data handling. TailwindCSS ensures responsive, beautiful layouts, while Clerk manages authentication. UploadThing supports file uploads, and Shadcn components enhance UI. The app features real-time event handling via webhooks, and employs Zod for data validation. React Hook Form simplifies form management, and modern Next.js layout route groups are utilized. Users can create and interact with threads, and admins can invite members to communities with notifications. The application is designed with a solid architecture and reusable components for scalability and maintainability."
-                img={threads}
-                link="https://threads-application-nine.vercel.app/"
-                github="https://github.com/Bernard065/threads-application"
-              />
-            </div>
+
             <div className="col-span-12">
               <ProjectDetails
                 title="EvolutionaryGym Application"
@@ -133,16 +147,6 @@ const projects = () => {
                 img={evolgym}
                 link="https://evolutionary-fitness-centre.vercel.app/"
                 github="https://github.com/Bernard065/Evolutionary-Fitness-Centre"
-              />
-            </div>
-            <div className="col-span-12">
-              <ProjectDetails
-                title="PayPal Clone "
-                type="E-Commerce Project"
-                summary="The PayPal Homepage Clone is a React application replicating the PayPal homepage's appearance and functionality. It utilizes popular packages like Material-UI, Emotion, and React Router for styling, icons, and smooth navigation. With Tailwind CSS, it ensures streamlines styling. This efficient combination delivers a visually appealing and fully functional frontend clone of the original PayPal homepage"
-                img={paypal}
-                link="https://paypal-clone-tau.vercel.app/"
-                github="https://github.com/Bernard065/paypal-clone"
               />
             </div>
 
