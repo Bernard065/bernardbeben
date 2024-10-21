@@ -12,6 +12,7 @@ import threads from "../../public/images/projects/threads.png";
 import paypal from "../../public/images/projects/paypal.png";
 import gericht from "../../public/images/projects/gericht.png";
 import piza from "../../public/images/projects/piza.jpg";
+import wealth from "../../public/images/projects/wealth-track.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -97,12 +98,23 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <ProjectDetails
-                title="DevOverflow Application"
+                title="DevOverflow"
                 type="Community Project"
                 summary="Dev Overflow is a popular online platform where developers and programmers can ask and answer questions related to coding, software development, and various technical topics. It operates as a community-driven Q&A site where users can post questions, provide answers, and vote on the quality of contributions. This application was built using Next.js, Reactjs, Tailwind CSS, and MongoDB, and clerk user authentication, real-time updates using webhooks, and a responsive design."
                 img={devflow}
                 link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
                 github="https://github.com/Bernard065/dev-overflow"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <ProjectDetails
+                title="WealthTrack"
+                type="Financial Project"
+                summary="WealthTack is a scalable and SEO-optimized banking app with a finance management dashboard, built using Next.js 14. It integrates banking APIs like Plaid and Dwolla to connect users' bank accounts, display real-time transaction data, and enable secure user-to-user payment transfers. Authentication is managed through Appwrite, ensuring secure login and account management. The app includes a user-friendly dashboard for viewing transaction history and managing multiple bank accounts. Real-time transaction updates are displayed without page reloads. Error tracking and security are handled via Sentry."
+                img={wealth}
+                link="https://wealth-track.vercel.app/"
+                github="https://github.com/Bernard065/wealth-track"
               />
             </div>
 
@@ -119,7 +131,7 @@ const projects = () => {
 
             <div className="col-span-12">
               <ProjectDetails
-                title="Threads Application"
+                title="Threads"
                 type="Social Media Project"
                 summary="Threads Application, built with Next.js 14 and Reactjs, utilizes server-side rendering for optimal performance and MongoDB for complex data handling. TailwindCSS ensures responsive, beautiful layouts, while Clerk manages authentication. UploadThing supports file uploads, and Shadcn components enhance UI. The app features real-time event handling via webhooks, and employs Zod for data validation. React Hook Form simplifies form management, and modern Next.js layout route groups are utilized. Users can create and interact with threads, and admins can invite members to communities with notifications. The application is designed with a solid architecture and reusable components for scalability and maintainability."
                 img={threads}
@@ -141,7 +153,7 @@ const projects = () => {
 
             <div className="col-span-12">
               <ProjectDetails
-                title="EvolutionaryGym Application"
+                title="EvolutionaryGym"
                 type="Fitness Project"
                 summary='"EvolutionaryGym" is a cutting-edge React frontend application built with TypeScript, Vite, Tailwind CSS, Hero Icons, Framer Motion, and Form Submit functionality. It aims to deliver a smooth and visually appealing user experience while incorporating React Anchor Link Smooth Scroll for seamless navigation.'
                 img={evolgym}
