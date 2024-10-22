@@ -100,7 +100,7 @@ const projects = () => {
               <ProjectDetails
                 title="DevOverflow"
                 type="Community Project"
-                summary="Dev Overflow is a popular online platform where developers and programmers can ask and answer questions related to coding, software development, and various technical topics. It operates as a community-driven Q&A site where users can post questions, provide answers, and vote on the quality of contributions. This application was built using Next.js, Reactjs, Tailwind CSS, and MongoDB, and clerk user authentication, real-time updates using webhooks, and a responsive design."
+                summary="Dev Overflow is a popular online platform where developers and programmers can ask and answer questions related to coding, software development, and various technical topics. It operates as a community-driven Q&A site where users can post questions, provide answers, and vote on the quality of contributions. This application was built using Next.js, Reactjs, Tailwind CSS, and MongoDB, and clerk user authentication, real-time updates using webhooks.
                 img={devflow}
                 link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
                 github="https://github.com/Bernard065/dev-overflow"
