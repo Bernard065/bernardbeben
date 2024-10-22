@@ -34,11 +34,7 @@ const About = () => {
                 to create efficient, scalable, and user-friendly solutions.
               </p>
               <p className='text-lg text-left mb-3'>
-                With expertise in
-                TypeScript, JavaScript, and frameworks like ReactJs, Node.js, Next.js, Ruby, Python
-                and Three.js, I have a strong foundation in web development and a proven track
-                record of delivering high-quality software products. I thrive on collaboration
-                and excel at working closely with clients to understand their needs and goals.
+                With expertise in TypeScript, JavaScript, and frameworks like ReactJs, Node.js, Next.js, Ruby, Python and Three.js, I have a strong foundation in web development and a proven track record of delivering high-quality software products. I thrive on collaboration and excel at working closely with clients to understand their needs and goals.
               </p>
               <p className='text-lg text-left'>
                 By leveraging my technical knowledge and adaptability, I ensure that the
