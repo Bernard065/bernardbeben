@@ -21,7 +21,6 @@ const iconMotionVariants = {
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter();
-    //console.log(router)
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
@@ -69,7 +68,7 @@ const Navbar = () => {
           <nav>
               <CustomLink href='/' title='Home' className='mr-4' />
               <CustomLink href='/about' title='About' className='mx-4' />
-              <CustomLink href='/projects' title='Projects' className="mx-4" />
+              <CustomLink href='/mywork' title='My Work' className="mx-4" />
               <CustomLink href='/articles' title='Articles' className='ml-4' />
     
           </nav>
@@ -114,7 +113,7 @@ const Navbar = () => {
           <nav className="flex items-center flex-col justify-center">
               <CustomMobileLink href='/' title='Home' className='' toggle={handleClick} />
               <CustomMobileLink href='/about' title='About' className='' toggle={handleClick} />
-              <CustomMobileLink href='/projects' title='Projects' className="" toggle={handleClick} />
+              <CustomMobileLink href='/mywork' title='My Work' className="" toggle={handleClick} />
               <CustomMobileLink href='/articles' title='Articles' className='' toggle={handleClick} />
     
           </nav>

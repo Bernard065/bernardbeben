@@ -81,11 +81,11 @@ const ProjectDetails = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const projects = () => {
+const mywork = () => {
   return (
     <>
       <Head>
-        <title>Bernard | Projects Page</title>
+        <title>Bernard | My Work Page</title>
         <meta name="description" content="description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center text-white">
@@ -180,4 +180,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default mywork;

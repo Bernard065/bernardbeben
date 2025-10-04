@@ -30,7 +30,7 @@ export default function Home() {
                 transition={{ duration: 1, delay: 1 }}
                 className='text-white mt-4 text-left font-medium my-4 text-base md:text-sm sm:text-xs'
               >
-                As a skilled full-stack developer and technical writer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
+                As a skilled full-stack developer and technical writer, I am dedicated to turning ideas into innovative web applications. Explore my latest work and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
               </motion.p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href='/bernardResume.pdf' target={'-blank'} className='bg-gray-500 hover:bg-gray-700 text-white text-lg px-4 py-2 rounded-md mr-4 md:p-2 md:px-4 md:text-base'>
