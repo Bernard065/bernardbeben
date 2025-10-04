@@ -52,7 +52,13 @@ const ProjectDetails = ({ title, summary, img, link, slug }) => {
         </div>
 
 
-        <div className="flex items-center justify-end pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div className="flex items-center justify-end gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <Link
+            href={`/projects/${slug}`}
+            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-200 transform hover:scale-105"
+          >
+            Learn More
+          </Link>
           <Link
             href={link}
             target="_blank"
