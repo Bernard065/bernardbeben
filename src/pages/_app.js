@@ -6,6 +6,8 @@ import Footer from '@/components/Footer'
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-mont',
+  display: 'swap',
+  fallback: ['system-ui', 'arial'],
 })
 
 const App = ({ Component, pageProps }) => {
