@@ -29,9 +29,40 @@ export default function Home() {
                 className='text-white mt-4 text-left font-medium my-4 text-base md:text-sm sm:text-xs'
               >
                 As a skilled full-stack developer and technical writer, I am dedicated to turning ideas into innovative web applications. Explore my latest work and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
+                
               </motion.p>
-              <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href='/contact' className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500 md:text-base'>Contact Me</Link>
+              <div className='flex items-center self-start mt-2 lg:self-center gap-4'>
+                <Link href='/contact'>
+                  <motion.button
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 1.2 }}
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0 10px 25px rgba(0,0,0,0.3)"
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className='px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:from-yellow-400 hover:to-pink-600 transition-all duration-300 ease-in-out md:text-base md:px-5 md:py-2 sm:px-4 sm:py-2 sm:text-sm'
+                  >
+                    Get in Touch
+                  </motion.button>
+                </Link>
+                <motion.a
+                  href='/images/projects/Benard_Omboga_CV.pdf'
+                  download="Bernard_Omboga_CV.pdf"
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 1.3 }}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.3)"
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <button className='px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 ease-in-out md:text-base md:px-5 md:py-2 sm:px-4 sm:py-2 sm:text-sm'>
+                    Download Resume
+                  </button>
+                </motion.a>
               </div>
             </div>
           </div>
