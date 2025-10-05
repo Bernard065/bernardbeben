@@ -146,9 +146,9 @@ const FeatureArticles = ({ img, title, time, summary, link, index }) => {
                 
                 <div className='flex items-center justify-between'>
                     <span className='text-primary font-semibold text-sm'>{time}</span>
-                    <motion.div 
+                    <motion.div
                         className='w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center'
-                        whileHover={{scale: 1.2, backgroundColor: 'rgba(var(--primary-rgb), 0.3)'}}
+                        whileHover={{scale: 1.2, backgroundColor: 'rgba(134, 62, 150, 0.3)'}}
                     >
                         <span className='text-primary text-xs'>→</span>
                     </motion.div>
