@@ -20,7 +20,7 @@ const About = () => {
         <Layout className='pt-16'>
           <AnimatedText text='Passion Fuels Innovation!' />
 
-          <section className='grid grid-cols-2 lg:grid-cols-1 gap-12 items-center mt-8'>
+          <section className='grid grid-cols-2 lg:grid-cols-1 gap-12 items-center mt-8 md:grid-cols-1 md:gap-8'>
             <motion.div
               className='text-center md:text-left'
               initial={{ x: -200, opacity: 0 }}
@@ -41,8 +41,8 @@ const About = () => {
                 solutions I develop address real-world problems and exceed client expectations.
               </p>
             </motion.div>
-            <div>
-              <Image src={aboutProfile} alt='bernard' />
+            <div className="w-full max-w-md mx-auto lg:max-w-sm md:max-w-xs">
+              <Image src={aboutProfile} alt='bernard' className="w-full h-auto rounded-lg" />
             </div>
           </section>
           <Skills />

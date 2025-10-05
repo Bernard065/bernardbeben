@@ -16,53 +16,63 @@ import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
-const ProjectDetails = ({ title, summary, img, link, slug }) => {
+const ProjectDetails = ({ title, img, link, slug }) => {
   const router = useRouter();
-
-
-  const shortSummary =
-    summary.length > 100 ? summary.slice(0, 100) + "..." : summary;
 
   return (
     <motion.article
-      className="w-full flex flex-col lg:flex-row items-center justify-between rounded-2xl border border-solid border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-lg hover:shadow-xl text-gray-900 dark:text-white p-6 lg:p-8 relative group transition-all duration-300 ease-in-out hover:-translate-y-1"
+      className="w-full flex flex-col md:flex-row items-center justify-between 
+      rounded-2xl border border-gray-200 dark:border-gray-800 
+      bg-white dark:bg-gray-900 shadow-md hover:shadow-xl 
+      text-gray-900 dark:text-white 
+      p-4 sm:p-6 md:p-8 relative group transition-all duration-300 ease-in-out 
+      hover:-translate-y-1 overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      {/* Hover gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 
+      rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-      <div className="w-full lg:w-2/5 cursor-pointer overflow-hidden rounded-xl mb-4 lg:mb-0">
+      {/* Project Image */}
+      <div className="w-full md:w-2/5 cursor-pointer overflow-hidden rounded-xl mb-4 md:mb-0 flex-shrink-0">
         <Link href={link} target="_blank" className="block w-full h-full">
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-48 lg:h-64 object-cover"
+            className="w-full h-52 sm:h-60 md:h-64 lg:h-72 xl:h-80 object-cover"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />
         </Link>
       </div>
 
-      <div className="w-full lg:w-3/5 flex flex-col items-start justify-between pl-0 lg:pl-8">
-        <div className="mb-4">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-3 leading-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 cursor-pointer">
-            {title}
-          </h2>
-        </div>
+      {/* Text + Buttons */}
+      <div className="w-full md:w-3/5 flex flex-col items-center md:items-start justify-center 
+      text-center md:text-left md:pl-6 lg:pl-8 break-words">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 leading-tight 
+        break-words hover:text-blue-600 dark:hover:text-blue-400 
+        transition-colors duration-200 cursor-pointer">
+          {title}
+        </h2>
 
-
-        <div className="flex items-center justify-end gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div className="flex flex-wrap items-center justify-center md:justify-start 
+        gap-3 pt-4 border-t border-gray-200 dark:border-gray-700 w-full">
           <Link
             href={`/projects/${slug}`}
-            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-200 transform hover:scale-105"
+            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 
+            text-white px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg text-sm font-semibold 
+            transition-all duration-200 transform hover:scale-105"
           >
             Learn More
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-200 transform hover:scale-105"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 
+            text-white px-5 py-2 sm:px-6 sm:py-2.5 rounded-lg text-sm font-semibold 
+            transition-all duration-200 transform hover:scale-105"
           >
             Visit Project
           </Link>
@@ -85,10 +95,13 @@ const MyWork = () => {
       <>
         <Head>
           <title>Bernard | My Work Page</title>
-          <meta name="description" content="Explore my portfolio of innovative projects and creative solutions" />
+          <meta
+            name="description"
+            content="Explore my portfolio of innovative projects and creative solutions"
+          />
         </Head>
-        <main className="w-full mb-16 flex flex-col items-center justify-center text-white min-h-screen">
-          <Layout className="pt-16 lg:pt-20">
+        <main className="w-full mb-16 flex flex-col items-center justify-center text-white min-h-screen bg-black">
+          <Layout className="pt-16 lg:pt-20 px-0 sm:px-6 md:px-10">
             <div className="flex items-center justify-center h-64">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
             </div>
@@ -102,86 +115,70 @@ const MyWork = () => {
     <>
       <Head>
         <title>Bernard | My Work Page</title>
-        <meta name="description" content="Explore my portfolio of innovative projects and creative solutions" />
+        <meta
+          name="description"
+          content="Explore my portfolio of innovative projects and creative solutions"
+        />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center text-white min-h-screen">
-        <Layout className="pt-16 lg:pt-20">
+
+      <main className="w-full mb-16 flex flex-col items-center justify-center text-white min-h-screen overflow-x-hidden bg-black">
+        <Layout className="pt-16 lg:pt-20 px-4 sm:px-6 md:px-10 xl:px-24">
           <AnimatedText
             text="Imagination Drives Innovation!"
-            className="mb-12 lg:mb-16 text-5xl lg:text-7xl xl:text-8xl sm:mb-8 sm:text-4xl xs:text-3xl"
+            className="mb-8 sm:mb-10 md:mb-12 lg:mb-16 
+            text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center"
           />
-          <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="col-span-12">
-              <div className="col-span-12">
-                <ProjectDetails
-                  title="DevOverflow"
-                  summary="Dev Overflow is a popular online platform where developers and programmers can ask and answer questions related to coding, software development, and various technical topics. It operates as a community-driven Q&A site where users can post questions, provide answers, and vote on the quality of contributions. This application was built using Next.js, Reactjs, Tailwind CSS, and MongoDB, and clerk user authentication, real-time updates using webhooks."
-                  img={devflow}
-                  link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
-                  slug="devoverflow"
-                />
-              </div>
-            </div>
 
-            <div className="col-span-12">
-              <ProjectDetails
-                title="WealthTrack"
-                summary="WealthTack is a scalable and SEO-optimized banking app with a finance management dashboard, built using Next.js 14. It integrates banking APIs like Plaid and Dwolla to connect users' bank accounts, display real-time transaction data, and enable secure user-to-user payment transfers. Authentication is managed through Appwrite, ensuring secure login and account management. The app includes a user-friendly dashboard for viewing transaction history and managing multiple bank accounts. Real-time transaction updates are displayed without page reloads. Error tracking and security are handled via Sentry."
-                img={wealth}
-                link="https://wealth-track.vercel.app/"
-                slug="wealthtrack"
-              />
-            </div>
+          {/* Responsive Grid */}
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 w-full max-w-7xl mx-auto">
+            <ProjectDetails
+              title="DevOverflow"
+              img={devflow}
+              link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
+              slug="devoverflow"
+            />
 
-            <div className="col-span-12">
-              <ProjectDetails
-                title="ClinicSync"
-                summary="ClinicSync is a comprehensive healthcare management system that streamlines the appointment process for patients and administrators. Patients can easily schedule appointments, which administrators can then confirm, triggering an SMS notification to inform the patient. Administrators also have the ability to cancel appointments, ensuring flexibility and clear communication. Built with Next.js, React.js, Appwrite, and Twilio, ClinicSync leverages these technologies to provide a robust and efficient platform for managing healthcare appointments, enhancing the overall experience for both patients and healthcare providers."
-                img={clinic}
-                link="https://clinic-sync.vercel.app/"
-                slug="clinicsync"
-              />
-            </div>
+            <ProjectDetails
+              title="WealthTrack"
+              img={wealth}
+              link="https://wealth-track.vercel.app/"
+              slug="wealthtrack"
+            />
 
-            <div className="col-span-12">
-              <ProjectDetails
-                title="Threads"
-                summary="Threads Application, built with Next.js 14 and Reactjs, utilizes server-side rendering for optimal performance and MongoDB for complex data handling. TailwindCSS ensures responsive, beautiful layouts, while Clerk manages authentication. UploadThing supports file uploads, and Shadcn components enhance UI. The app features real-time event handling via webhooks, and employs Zod for data validation. React Hook Form simplifies form management, and modern Next.js layout route groups are utilized. Users can create and interact with threads, and admins can invite members to communities with notifications. The application is designed with a solid architecture and reusable components for scalability and maintainability."
-                img={threads}
-                link="https://threads-application-nine.vercel.app/"
-                slug="threads"
-              />
-            </div>
+            <ProjectDetails
+              title="ClinicSync"
+              img={clinic}
+              link="https://clinic-sync.vercel.app/"
+              slug="clinicsync"
+            />
 
-            <div className="col-span-12">
-              <ProjectDetails
-                title="Pizza Tracker"
-                summary="The Pizza Tracker is a Rails API that enables users to track restaurants and their associated pizzas. The API offers various endpoints, including fetching a list of all restaurants and pizzas, accessing details of a specific restaurant along with its pizzas, and creating RestaurantPizza records to associate existing pizzas with restaurants. Users can use the endpoints to manage restaurant-pizza relationships seamlessly. The API employs the Restaurant, Pizza, and RestaurantPizza models to efficiently organize and retrieve relevant data, providing a comprehensive pizza tracking solution."
-                img={piza}
-                link="https://github.com/Bernard065/pizaa-tracker-API"
-                slug="pizza-tracker"
-              />
-            </div>
+            <ProjectDetails
+              title="Threads"
+              img={threads}
+              link="https://threads-application-nine.vercel.app/"
+              slug="threads"
+            />
 
-            <div className="col-span-12">
-              <ProjectDetails
-                title="EvolutionaryGym"
-                summary='"EvolutionaryGym" is a cutting-edge React frontend application built with TypeScript, Vite, Tailwind CSS, Hero Icons, Framer Motion, and Form Submit functionality. It aims to deliver a smooth and visually appealing user experience while incorporating React Anchor Link Smooth Scroll for seamless navigation.'
-                img={evolgym}
-                link="https://evolutionary-fitness-centre.vercel.app/"
-                slug="evolutionarygym"
-              />
-            </div>
+            <ProjectDetails
+              title="Pizza Tracker"
+              img={piza}
+              link="https://github.com/Bernard065/pizaa-tracker-API"
+              slug="pizza-tracker"
+            />
 
-            <div className="col-span-12">
-              <ProjectDetails
-                title="Gericht Restaurant"
-                summary="The Gericht Restaurant is a web application created from a Figma design for a hotel landing page. Developed using React, the project includes React Icons for stylish iconography. The application translates the Figma design into a visually captivating and fully functional hotel landing page."
-                img={gericht}
-                link="https://the-gourmet-garden-restaurant-application.vercel.app/"
-                slug="gericht-restaurant"
-              />
-            </div>
+            <ProjectDetails
+              title="EvolGym"
+              img={evolgym}
+              link="https://evolutionary-fitness-centre.vercel.app/"
+              slug="evolutionarygym"
+            />
+
+            <ProjectDetails
+              title="Gericht Restaurant"
+              img={gericht}
+              link="https://the-gourmet-garden-restaurant-application.vercel.app/"
+              slug="gericht-restaurant"
+            />
           </div>
         </Layout>
       </main>
