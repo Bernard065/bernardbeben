@@ -5,7 +5,6 @@ import profilePic from '../../public/images/profile/boimelo3.png';
 import AnimatedText from '@/components/AnimatedText';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 export default function Home() {
   return (
@@ -32,10 +31,6 @@ export default function Home() {
                 As a skilled full-stack developer and technical writer, I am dedicated to turning ideas into innovative web applications. Explore my latest work and articles, showcasing my expertise in web development. Let&apos;s bring digital vision to life through code! {/* Escaped single quote */}
               </motion.p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href='/bernardResume.pdf' target={'-blank'} className='bg-gray-500 hover:bg-gray-700 text-white text-lg px-4 py-2 rounded-md mr-4 md:p-2 md:px-4 md:text-base'>
-                  <span className='mr-2'>Resume</span>
-                  <FileDownloadIcon className='h-5 w-5' />
-                </Link>
                 <Link href='/contact' className='ml-4 text-lg font-medium capitalize text-white underline hover:text-orange-500 md:text-base'>Contact Me</Link>
               </div>
             </div>
