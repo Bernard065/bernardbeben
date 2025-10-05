@@ -50,12 +50,6 @@ const Education = () => {
         />
         <motion.ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Software Engineering BootCamp"
-            time="2023"
-            place="Moringa School"
-            info=" An immersive program based on the Flatiron School curriculum. I developed proficiency in JavaScript, Python, React, Django, and Ruby on Rails. The bootcamp emphasized hands-on learning through real-world projects and collaborative teamwork. As a result, I enhanced my problem-solving and communication skills. I am now ready to make impactful contributions in the field of software engineering."
-          />
-          <Details
             type="Bsc. Computer Science"
             time="2018"
             place="Chuka University"

@@ -1,53 +1,74 @@
-import React from 'react';
-import AnimatedText from '@/components/AnimatedText';
-import Layout from '@/components/Layout';
-import Head from 'next/head';
-import Image from 'next/image';
-import aboutProfile from '../../public/images/profile/bernard_profle1.png';
-import { motion } from 'framer-motion';
-import Skills from '@/components/Skills';
-import Experience from '@/components/Experience';
-import Education from '@/components/Education';
+import React from "react";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import { motion } from "framer-motion";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const About = () => {
   return (
     <>
       <Head>
-        <title>Bernard | About Page</title>
-        <meta name='about' content='about' />
+        <title>Bernard | About</title>
+        <meta
+          name="description"
+          content="Learn more about Bernard — a passionate full-stack developer skilled in TypeScript, React, Next.js, Node.js, Ruby, and Python."
+        />
       </Head>
-      <main className='w-full flex flex-col items-center justify-center text-white bg-gray-900 min-h-screen'>
-        <Layout className='pt-16'>
-          <AnimatedText text='Passion Fuels Innovation!' />
 
-          <section className='grid grid-cols-2 lg:grid-cols-1 gap-12 items-center mt-8 md:grid-cols-1 md:gap-8'>
+      <main className="min-h-screen w-full flex flex-col items-center justify-center bg-black text-white overflow-x-hidden">
+        <Layout className="pt-20 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 2xl:px-36 max-w-[1400px] mx-auto">
+          <AnimatedText
+            text="Passion Fuels Innovation!"
+            className="mb-12 text-center text-3xl sm:text-4xl md:text-6xl font-bold leading-tight"
+          />
+
+          {/* 🧠 About Section */}
+          <section className="flex flex-col items-center justify-center mb-20">
             <motion.div
-              className='text-center md:text-left'
-              initial={{ x: -200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
+              className="text-left max-w-4xl space-y-6"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
             >
-              <h2 className='text-3xl font-bold mb-4 text-center'>About Me</h2>
-              <p className='text-lg text-left mb-3'>
-                Hi, I&apos;m Bernard, a full-stack developer. As a skilled software developer, I
-                bring a diverse set of technical skills and creative problem-solving abilities
-                to create efficient, scalable, and user-friendly solutions.
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+                About Me
+              </h2>
+
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                Hi, I&apos;m <span className="text-white font-semibold">Bernard</span>, a
+                full-stack developer who loves solving complex problems through
+                code. I focus on building scalable, efficient, and beautiful
+                digital experiences.
               </p>
-              <p className='text-lg text-left mb-3'>
-                With expertise in TypeScript, JavaScript, and frameworks like ReactJs, Node.js, Next.js, Ruby, Python and Three.js, I have a strong foundation in web development and a proven track record of delivering high-quality software products. I thrive on collaboration and excel at working closely with clients to understand their needs and goals.
+
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                With a strong background in{" "}
+                <span className="text-white font-medium">
+                  TypeScript, JavaScript, and frameworks like React, Next.js, and
+                  Node.js
+                </span>
+                , I also work with Ruby, Python, and Three.js to deliver rich,
+                performant web apps that make an impact.
               </p>
-              <p className='text-lg text-left'>
-                By leveraging my technical knowledge and adaptability, I ensure that the
-                solutions I develop address real-world problems and exceed client expectations.
+
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                I’m passionate about collaboration, continuous learning, and
+                turning innovative ideas into real-world applications that
+                empower users and businesses alike.
               </p>
             </motion.div>
-            <div className="w-full max-w-md mx-auto lg:max-w-sm md:max-w-xs">
-              <Image src={aboutProfile} alt='bernard' className="w-full h-auto rounded-lg" />
-            </div>
           </section>
-          <Skills />
-          <Experience />
-          <Education />
+
+          {/* 🧩 Skills, Experience & Education */}
+          <section className="space-y-24">
+            <Skills />
+            <Experience />
+            <Education />
+          </section>
         </Layout>
       </main>
     </>
