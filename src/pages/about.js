@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Bernard | About</title>
+        <title>Bernard | About Me</title>
         <meta
           name="description"
           content="Learn more about Bernard — a passionate full-stack developer skilled in TypeScript, React, Next.js, Node.js, Ruby, and Python."
