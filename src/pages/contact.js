@@ -96,8 +96,8 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Have a project in mind? Want to collaborate? Or just want to chat about tech? 
-            I'm always open to discussing new opportunities and ideas.
+            Have a project in mind? Want to collaborate? Or just want to chat about tech?
+            I&apos;m always open to discussing new opportunities and ideas.
           </motion.p>
 
           <div className='grid grid-cols-12 lg:grid-cols-1 gap-8 items-start'>

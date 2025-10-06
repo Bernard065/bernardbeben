@@ -30,7 +30,7 @@
     "three": "^0.154.0"
   },
   "engines": {
-    "node": ">=22.0.0",
+    "node": ">=18.0.0",
     "npm": ">=10.0.0"
   },
   "devDependencies": {
