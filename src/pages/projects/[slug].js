@@ -12,6 +12,31 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 // 📘 Project Data
 // -----------------------------
 const projectsData = {
+  sleepytab: {
+    title: "Sleepy Tabs Guardian",
+    description:
+      "Sleepy Tabs Guardian is a Manifest V3 Chrome/Chromium extension designed to keep your browser fast and memory-efficient by intelligently managing inactive and resource-heavy tabs. It automatically puts idle tabs to sleep and reloads pages that exceed configurable memory thresholds, while giving users full visibility and control through a rich telemetry dashboard.",
+    fullDescription: `Sleepy Tabs Guardian is a Manifest V3 Chrome/Chromium extension that automatically freezes inactive tabs, reloads high-memory pages, and surfaces rich telemetry in a dashboard. A hybrid pipeline combines lightweight in-tab sampling, Chrome's debugger API, and an optional Node.js + Playwright companion service to collect CDP metrics and drive lifecycle actions such as Page.setWebLifecycleState.
+
+Features
+Auto-sleep inactive tabs after a configurable timeout (default 5 minutes) with per-tab override switches.
+Auto-reload tabs exceeding a configurable memory limit (default 250 MB) using CDP lifecycle commands.
+IndexedDB-powered telemetry log with dashboard highlighting critical pages and recent actions.
+Consent workflow plus in-page reminders with countdowns that auto-accept actions if the user is away.
+Options page for thresholds, reminder timers, and automation toggles.
+Hybrid telemetry stack: performance.memory probes run inside each tab, Chrome's debugger API gathers fallback CDP metrics when the companion is offline, and the native messaging bridge delivers the richest dataset when available.`,
+    images: ["/images/projects/sleepy-tab.jpeg"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Monorepo",
+      "Chrome Extension APIs",
+      "Playwright",
+    ],
+    link: "https://github.com/Bernard065/sleepy-tabs",
+    github: "https://github.com/Bernard065/sleepy-tabs",
+    featured: true,
+  },
   devoverflow: {
     title: "DevOverflow",
     description:
@@ -26,7 +51,7 @@ Key features include:
     images: ["/images/projects/devflow.png"],
     technologies: [
       "Next.js",
-      "React",
+      "TypeScript",
       "MongoDB",
       "Tailwind CSS",
       "Clerk Auth",
@@ -47,7 +72,7 @@ Features:
 • Advanced analytics & budgeting
 • Built with Next.js 14 and Plaid API.`,
     images: ["/images/projects/wealth-track.png"],
-    technologies: ["Next.js", "Appwrite", "Plaid API", "Dwolla", "Sentry"],
+    technologies: ["Next.js", "TypeScript", "Appwrite", "Plaid API", "Dwolla", "Sentry"],
     link: "https://wealth-track.vercel.app/",
     github: "https://github.com/Bernard065/wealth-track",
     featured: true,
@@ -58,7 +83,7 @@ Features:
       "Healthcare management system for scheduling and patient coordination.",
     fullDescription: `ClinicSync digitalizes healthcare scheduling with SMS notifications, dashboards, and secure record management.`,
     images: ["/images/projects/clinic.png"],
-    technologies: ["Next.js", "Appwrite", "Twilio", "Node.js"],
+    technologies: ["Next.js", "TypeScript", "Appwrite", "Twilio", "Node.js"],
     link: "https://clinic-sync.vercel.app/",
     github: "https://github.com/Bernard065/clinic-sync",
   },
@@ -68,7 +93,7 @@ Features:
       "Social media app for meaningful conversations built with Next.js 14.",
     fullDescription: `Threads provides an elegant UI for community-based threaded discussions with authentication and real-time updates.`,
     images: ["/images/projects/threads.png"],
-    technologies: ["Next.js", "MongoDB", "TailwindCSS", "Clerk"],
+    technologies: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS", "Clerk"],
     link: "https://threads-application-nine.vercel.app/",
     github: "https://github.com/Bernard065/threads-application",
   },

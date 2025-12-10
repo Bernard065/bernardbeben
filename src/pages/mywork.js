@@ -12,6 +12,7 @@ import threads from "../../public/images/projects/threads.png";
 import gericht from "../../public/images/projects/gericht.png";
 import piza from "../../public/images/projects/piza.jpg";
 import wealth from "../../public/images/projects/wealth-track.png";
+import sleepy from "../../public/images/projects/sleepy-tab.jpeg"
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -131,54 +132,42 @@ const MyWork = () => {
 
           {/* Responsive Grid */}
           <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 w-full max-w-7xl mx-auto">
-            <ProjectDetails
+            
+            1. <ProjectDetails
               title="DevOverflow"
               img={devflow}
               link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
               slug="devoverflow"
             />
 
-            <ProjectDetails
+             2. <ProjectDetails
+              title="Sleepy Tabs Guardian"
+              img={sleepy}
+              link="https://github.com/Bernard065/sleepy-tabs"
+              slug="sleepytab"
+            />
+
+            3. <ProjectDetails
               title="WealthTrack"
               img={wealth}
               link="https://wealth-track.vercel.app/"
               slug="wealthtrack"
             />
 
-            <ProjectDetails
+            4. <ProjectDetails
               title="ClinicSync"
               img={clinic}
               link="https://clinic-sync.vercel.app/"
               slug="clinicsync"
             />
 
-            <ProjectDetails
+            5. <ProjectDetails
               title="Threads"
               img={threads}
               link="https://threads-application-nine.vercel.app/"
               slug="threads"
             />
-
-            <ProjectDetails
-              title="Pizza Tracker"
-              img={piza}
-              link="https://github.com/Bernard065/pizaa-tracker-API"
-              slug="pizza-tracker"
-            />
-
-            <ProjectDetails
-              title="EvolGym"
-              img={evolgym}
-              link="https://evolutionary-fitness-centre.vercel.app/"
-              slug="evolutionarygym"
-            />
-
-            <ProjectDetails
-              title="Gericht Restaurant"
-              img={gericht}
-              link="https://the-gourmet-garden-restaurant-application.vercel.app/"
-              slug="gericht-restaurant"
-            />
+            
           </div>
         </Layout>
       </main>

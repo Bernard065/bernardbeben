@@ -34,12 +34,49 @@ const Skills = () => {
             <Skill name='Python' x='0vw' y='-20vw' />
             <Skill name='FastAPI' x='-25vw' y='18vw' />
             <Skill name='Django' x='-37vw' y='0vw' />
-            <Skill name='Ruby' x='15vw' y='22vw' /> 
-            <Skill name='Rails' x='-25vw' y='-8vw' /> 
-            <Skill name='SQL' x='25vw' y='15vw' /> 
-            <Skill name='PostgreSQL' x='-26vw' y='10vw' /> 
-            <Skill name='MongoDB' x='-5vw' y='18vw' /> 
+            <Skill name='Ruby' x='15vw' y='22vw' />
+            <Skill name='Rails' x='-25vw' y='-8vw' />
+            <Skill name='SQL' x='25vw' y='15vw' />
+            <Skill name='PostgreSQL' x='-26vw' y='10vw' />
+            <Skill name='MongoDB' x='-5vw' y='18vw' />
             <Skill name='Figma' x='-16vw' y='-10vw' />
+            <Skill name='Java' x='10vw' y='-18vw' />
+            <Skill name='C++' x='-10vw' y='20vw' />
+            <Skill name='Perl' x='30vw' y='10vw' />
+            <Skill name='MySQL' x='-30vw' y='-5vw' />
+            <Skill name='ASP.NET' x='5vw' y='18vw' />
+            <Skill name='Adobe CC' x='-15vw' y='-18vw' />
+            <Skill name='Canva' x='20vw' y='-15vw' />
+            <Skill name='PHP' x='-35vw' y='5vw' />
+            <Skill name='Communication' x='35vw' y='0vw' />
+            <Skill name='Creativity' x='-20vw' y='15vw' />
+            <Skill name='Integrity' x='25vw' y='20vw' />
+            <Skill name='Agile' x='-30vw' y='-10vw' />
+            <Skill name='Apache' x='0vw' y='-25vw' />
+            <Skill name='Apache Kafka' x='15vw' y='-20vw' />
+            <Skill name='Data Structures' x='-10vw' y='-22vw' />
+            <Skill name='Git' x='28vw' y='-12vw' />
+            <Skill name='Java Spring' x='-22vw' y='12vw' />
+            <Skill name='JIRA' x='18vw' y='18vw' />
+            <Skill name='Kafka' x='-28vw' y='8vw' />
+            <Skill name='RabbitMQ' x='8vw' y='22vw' />
+            <Skill name='SpringBoot' x='-18vw' y='-15vw' />
+            <Skill name='GitFlow' x='22vw' y='-8vw' />
+            <Skill name='Test-Driven Development' x='-8vw' y='25vw' />
+            <Skill name='Microservices' x='12vw' y='25vw' />
+            <Skill name='Angular' x='-12vw' y='-25vw' />
+            <Skill name='Problem-Solving' x='30vw' y='5vw' />
+            <Skill name='Teamwork' x='-35vw' y='-2vw' />
+            <Skill name='CRM' x='35vw' y='-3vw' />
+            <Skill name='ERP' x='-25vw' y='20vw' />
+            <Skill name='HubSpot' x='25vw' y='25vw' />
+            <Skill name='Salesforce' x='-15vw' y='22vw' />
+            <Skill name='SAP' x='10vw' y='-22vw' />
+            <Skill name='CRM Systems' x='-5vw' y='25vw' />
+            <Skill name='Unix' x='5vw' y='-25vw' />
+            <Skill name='Solaris' x='-20vw' y='-20vw' />
+            <Skill name='Linux' x='20vw' y='22vw' />
+            <Skill name='Windows' x='-30vw' y='15vw' />
         </div>
     </>
   )
