@@ -12,6 +12,40 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 // 📘 Project Data
 // -----------------------------
 const projectsData = {
+  "pixora-ai": {
+    title: "Pixora AI",
+    description:
+      "AI-Powered Photo Editor Micro SaaS with credits-based system and Stripe integration.",
+    fullDescription: `Pixora AI is a comprehensive Micro SaaS platform that allows users to transform and edit photos using cutting-edge AI technology. The application features a credits-based system where free users can perform a limited number of edits before being prompted to upgrade to a premium plan via a secure payment gateway.
+
+Key Features:
+• Background Removal: Automatically makes images transparent using ImageKit AI
+• Generative Fill: Uses AI prompts to change or add elements to backgrounds
+• AI Upscaling & Enhancing: Improves image quality and resolution
+• Before/After Slider: Custom-built component for comparing original and AI-edited versions
+• Subscription & Monetization: Usage-based access with 3 free credits, Stripe integration for Pro plans
+• Authentication: NextAuth.js with Google Provider for seamless user onboarding
+
+Challenges Overcome:
+• Real-time AI Feedback: Implemented polling mechanism to check status of AI transformations
+• State Management: Managed complex states including job status, edit history, and prompt-based tool configurations
+• Responsive Design: Ensured the entire SaaS platform is fully responsive across mobile and desktop devices`,
+    images: ["/images/projects/pixora.png"],
+    technologies: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "ImageKit.io",
+      "Stripe",
+      "MongoDB",
+      "Prisma",
+      "NextAuth.js",
+      "Framer Motion",
+    ],
+    link: "https://pixora-kappa-five.vercel.app/",
+    github: "https://github.com/Bernard065/pixora",
+    featured: true,
+  },
   sleepytab: {
     title: "Sleepy Tabs Guardian",
     description:
@@ -299,7 +333,7 @@ const ProjectDetail = () => {
 
           {/* 📩 Footer */}
           <footer className="w-full text-center border-t border-gray-800 mt-16 pt-6 text-sm text-gray-400">
-            <p>© 2025 All Rights Reserved.</p>
+            <p>© 2026 All Rights Reserved.</p>
             <p className="font-medium text-white mt-1">Bernard</p>
             <p className="text-gray-400">bernardbebeni@gmail.com</p>
           </footer>

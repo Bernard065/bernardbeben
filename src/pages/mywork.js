@@ -13,6 +13,7 @@ import gericht from "../../public/images/projects/gericht.png";
 import piza from "../../public/images/projects/piza.jpg";
 import wealth from "../../public/images/projects/wealth-track.png";
 import sleepy from "../../public/images/projects/sleepy-tab.jpeg"
+import pixora from "../../public/images/projects/pixora.png";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -134,6 +135,13 @@ const MyWork = () => {
           <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 w-full max-w-7xl mx-auto">
             
             1. <ProjectDetails
+              title="Pixora AI"
+              img={pixora}
+              link="https://pixora-kappa-five.vercel.app/"
+              slug="pixora-ai"
+            />
+
+             2. <ProjectDetails
               title="DevOverflow"
               img={devflow}
               link="https://dev-overflow-git-main-bernard065s-projects.vercel.app/"
