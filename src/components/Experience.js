@@ -62,7 +62,7 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Junior Software Developer"
+            position="Software Developer"
             company="Otigo Research and Technology Hub"
             companyLink="#"
             time="2024 - Present"
@@ -88,20 +88,6 @@ const Experience = () => {
               <li>Analyzed 5M customer entries to optimize processing times and trends.</li>
               <li>Enhanced reporting efficiency by 30% through custom-built dashboards.</li>
               <li>Improved data accuracy by 25% using advanced validation techniques.</li>
-            </ul>
-          </Details>
-
-          <Details
-            position="Software Developer"
-            company="Freelance"
-            companyLink="#"
-            time="2022 - Present"
-            address="Remote"
-          >
-            <ul className="list-disc list-inside space-y-2 opacity-80">
-              <li>Delivered 12+ bespoke software solutions for finance and healthcare clients.</li>
-              <li>Improved application performance by 30% through algorithm optimization.</li>
-              <li>Integrated automated testing frameworks to decrease bug incidence by 25%.</li>
             </ul>
           </Details>
 

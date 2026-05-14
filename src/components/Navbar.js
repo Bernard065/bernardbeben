@@ -58,7 +58,7 @@ const CustomLink = ({ href, title, className = "", isSPA, isActive = false }) =>
     <button 
       type="button" 
       onClick={handleClick} 
-      className={`${className} relative group ${isActive ? 'text-white' : 'text-white/80'} hover:text-orange-500 transition-colors duration-300 font-medium`}
+      className={`${className} relative group text-lg py-2 ${isActive ? 'text-white' : 'text-white/80'} hover:text-orange-500 transition-colors duration-300 font-medium`}
     >
       {title}
       <span className={`h-[1px] inline-block ${isActive ? 'w-full' : 'w-0'} bg-orange-500 absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300`}>
@@ -68,7 +68,7 @@ const CustomLink = ({ href, title, className = "", isSPA, isActive = false }) =>
   );
 };
 
-const CustomMobileLink = ({ href, title, className = "", toggle, isSPA }) => {
+const CustomMobileLink = ({ href, title, className = "", toggle, isSPA, isActive = false }) => {
   const router = useRouter();
 
   const scrollToSection = (target) => {
@@ -102,11 +102,11 @@ const CustomMobileLink = ({ href, title, className = "", toggle, isSPA }) => {
   return (
     <button 
       type="button" 
-      className={`${className} relative group my-4 text-white hover:text-orange-500 transition-colors text-2xl font-semibold`} 
+      className={`${className} relative group my-4 ${isActive ? 'text-orange-500' : 'text-white'} hover:text-orange-500 transition-colors text-2xl font-semibold`} 
       onClick={handleClick}
     >
       {title}
-      <span className={`h-[1px] inline-block w-0 bg-orange-500 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-300`}>
+      <span className={`h-[1px] inline-block ${isActive ? 'w-full' : 'w-0'} bg-orange-500 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-300`}>
         &nbsp;
       </span>
     </button>
@@ -125,13 +125,13 @@ const Navbar = ({ isSPA = true }) => {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries.filter((entry) => entry.isIntersecting);
-        if (visible.length > 0) {
-          const mostVisible = visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-          setActiveSection(mostVisible.target.id);
-        }
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
       },
-      { rootMargin: '-45% 0px -45% 0px', threshold: [0.25, 0.5, 0.75] }
+      { rootMargin: '0px 0px -50% 0px', threshold: 0.1 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -143,10 +143,9 @@ const Navbar = ({ isSPA = true }) => {
       <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between gap-4 lg:px-6 md:px-4">
         <div className="flex items-center gap-3">
           <Logo />
-          <span className="hidden md:inline text-sm text-white/70 uppercase tracking-[0.2em]">Portfolio</span>
         </div>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="flex md:hidden items-center gap-6">
           {navItems.map((item) => (
             <CustomLink
               key={item.href}
@@ -159,7 +158,7 @@ const Navbar = ({ isSPA = true }) => {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-4">
+        <div className="flex md:hidden items-center gap-4">
           <Link href='https://twitter.com/bernard_bebeni' target="_blank" className="text-white/80 hover:text-orange-500 transition-colors">
             <motion.div variants={iconMotionVariants} whileHover="hover" initial="initial">
               <TwitterIcon className="!w-6 !h-6" />
@@ -178,7 +177,7 @@ const Navbar = ({ isSPA = true }) => {
         </div>
 
         <button
-          className="flex-col justify-center items-center md:hidden z-50"
+          className="hidden md:flex md:flex-col justify-center items-center z-50"
           onClick={handleClick}
           aria-label="Toggle Menu"
         >
@@ -192,7 +191,7 @@ const Navbar = ({ isSPA = true }) => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="w-full h-screen z-40 flex flex-col justify-center items-center fixed top-0 left-0 bg-black/95 backdrop-blur-xl md:hidden"
+          className="hidden md:flex w-full h-screen z-40 flex-col justify-center items-center fixed top-0 left-0 bg-black/95 backdrop-blur-xl"
         >
           <nav className="flex items-center flex-col justify-center">
             {navItems.map((item) => (
@@ -202,6 +201,7 @@ const Navbar = ({ isSPA = true }) => {
                 title={item.title}
                 toggle={handleClick}
                 isSPA={isSPA}
+                isActive={activeSection === item.href.replace('#', '')}
               />
             ))}
           </nav>

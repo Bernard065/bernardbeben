@@ -5,7 +5,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+
 
 const About = () => {
   return (
@@ -63,11 +63,10 @@ const About = () => {
             </motion.div>
           </section>
 
-          {/* 🧩 Skills, Experience & Education */}
+          {/* 🧩 Skills & Experience */}
           <section className="space-y-24">
             <Skills />
             <Experience />
-            <Education />
           </section>
         </Layout>
       </main>

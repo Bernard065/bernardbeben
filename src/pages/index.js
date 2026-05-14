@@ -10,7 +10,6 @@ import Navbar from '@/components/Navbar';
 import AnimatedText from '@/components/AnimatedText';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
-import Education from '@/components/Education';
 
 // Project Assets
 import pixora from '../../public/images/projects/pixora.png';
@@ -350,7 +349,6 @@ export default function Home() {
             <div className="mt-20 space-y-10">
               <Skills />
               <Experience />
-              <Education />
             </div>
           </Layout>
         </Section>
@@ -432,6 +430,16 @@ export default function Home() {
                   </span>
                 </article>
               ))}
+            </div>
+
+            <div className="mt-10 flex justify-center">
+              <Link
+                href="https://medium.com/@bernardbebeni"
+                target="_blank"
+                className="inline-flex items-center justify-center rounded-full bg-orange-500 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/20 hover:bg-orange-600 transition-colors"
+              >
+                More articles
+              </Link>
             </div>
           </Layout>
         </Section>
